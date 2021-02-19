@@ -11,7 +11,7 @@ Si se desea instalar este sistema se tiene los siguientes requisitos:
 - Git
 - Nodejs
 
-Pasos para instalar y ejecutar la aplicacion:
+Pasos para instalar y ejecutar la aplicación:
 
 1. Clona el repositorio
 `git clone https://github.com/storne/api-togofy.git`
@@ -21,7 +21,7 @@ Pasos para instalar y ejecutar la aplicacion:
 
 3. Crea la base de datos con el nombre `togofy`
 
-4. Crear las tablas
+4. Crear las tablas en la base de datos
 `php artisan migrate`
 
 5. Copia y pega .env.example a .env y configura los accesos a la base de datos
@@ -37,7 +37,7 @@ DB_PASSWORD=
 6. Genera la clave
 `php artisan key:generate`
 
-7. Inicia la aplicacion
+7. Inicia la aplicación
 `php artisan serve`
 
 El api corre en la ruta `http://localhost:8000/api`
