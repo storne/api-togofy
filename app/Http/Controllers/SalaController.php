@@ -17,6 +17,10 @@ class SalaController extends Controller
         try{
 
             $salas = Sala::all();
+
+            foreach ($salas as $key) {
+                $key->reservas;
+            }
             return response()->json(['data' => $salas, 'message' => 'Exitoso']);
 
         }catch (\Exception $e) {

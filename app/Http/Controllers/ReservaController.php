@@ -17,6 +17,11 @@ class ReservaController extends Controller
         try{
 
             $reservas = Reserva::all();
+
+            foreach ($reservas as $key) {
+                $key->sala;
+            }
+
             return response()->json(['data' => $reservas, 'message' => 'Exitoso']);
 
         }catch (\Exception $e) {
@@ -121,7 +126,7 @@ class ReservaController extends Controller
 
             $reserva = Reserva::find($id);
             $reserva->delete();
-            return response()->json(['data' => $reserva, 'message' => 'Reserva eliminada']);
+            return response()->json(['data' => true, 'message' => 'Reserva eliminada']);
 
         }catch (\Exception $e) {
             return $this->throwGenericException($e);

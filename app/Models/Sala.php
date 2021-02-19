@@ -9,8 +9,8 @@ class Sala extends Model
 {
     use HasFactory;
 
-    public function Reservas()
+    public function reservas()
     {
-        return $this-hasMany(Reserva::class,'reserva_id','id');
+        return $this->hasMany(Reserva::class);
     }
 }

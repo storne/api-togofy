@@ -9,7 +9,7 @@ class Reserva extends Model
 {
     use HasFactory;
 
-    public function Sala()
+    public function sala()
     {
         return $this->belongsTo(Sala::class,'sala_id','id');
     }
