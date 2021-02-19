@@ -34,10 +34,13 @@ DB_USERNAME=root
 DB_PASSWORD=
 ``` 
 
-6. Inicia la aplicación con 
+6. Genera la clave
+`php artisan key:generate`
+
+7. Inicia la aplicacion
 `php artisan serve`
 
-7. El api corre en la ruta `http://localhost:8000/api`
+El api corre en la ruta `http://localhost:8000/api`
 
 
 ## License
