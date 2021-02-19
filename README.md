@@ -25,12 +25,14 @@ Pasos para instalar y ejecutar la aplicacion:
 `php artisan migrate`
 
 5. Copia y pega .env.example a .env y configura los accesos a la base de datos
+``` 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=togofy
 DB_USERNAME=root
 DB_PASSWORD=
+``` 
 
 6. Inicia la aplicación con 
 `php artisan serve`
