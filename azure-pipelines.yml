@@ -19,7 +19,6 @@ stages:
     - script: echo This is a build job
     displayName: 'Build Project'
 
-
 variables:
   phpVersion: 7.3
 
