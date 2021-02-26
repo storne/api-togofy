@@ -9,6 +9,17 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+stages:
+- stage: CI
+  displayName: CI Stage
+  jobs:
+  -Human-readable name for the job
+    displayName:  Build
+    step:
+    - script: echo This is a build job
+    displayName: 'Build Project'
+
+
 variables:
   phpVersion: 7.3
 
